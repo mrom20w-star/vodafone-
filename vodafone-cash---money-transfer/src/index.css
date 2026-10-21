@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', 'Cairo', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.scalloped-badge {
+  clip-path: polygon(
+    50% 0%, 63% 5%, 75% 0%, 82% 10%, 93% 8%, 95% 21%, 100% 28%, 98% 41%,
+    100% 50%, 98% 59%, 100% 72%, 95% 79%, 93% 92%, 82% 90%, 75% 100%, 63% 95%,
+    50% 100%, 37% 95%, 25% 100%, 18% 90%, 7% 92%, 5% 79%, 0% 72%, 2% 59%,
+    0% 50%, 2% 41%, 0% 28%, 5% 21%, 7% 8%, 18% 10%, 25% 0%, 37% 5%
+  );
+}

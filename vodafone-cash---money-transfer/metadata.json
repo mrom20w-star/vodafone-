@@ -1,0 +1,6 @@
+{
+  "name": "Vodafone Cash - Money Transfer",
+  "description": "Realistic Vodafone Cash money transfer application with authentic Egyptian mobile transfer workflow, PIN keypad, and receipt generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
